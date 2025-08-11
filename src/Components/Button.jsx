@@ -3,7 +3,7 @@ import React from 'react'
 function Button({text, onAdd}){
   
   return (
-    <button className='h-8 rounded'
+    <button className='h-8 rounded w-16'
      style={{backgroundColor:'green'}} 
      onClick={onAdd} type='button'>
       {text}
