@@ -4,7 +4,7 @@ import TaskList from "./Components/TaskList";
 import { useState } from "react";
 
 function App() {
-  const [showAddTask, setShowAddTask] = useState(true)
+  const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState([
         {
             id: 1,
