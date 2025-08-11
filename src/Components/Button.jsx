@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Button({text, onAdd}){
+function Button({text, toggleAdd}){
   
   return (
     <button className='h-8 rounded w-16'
      style={{backgroundColor:'green'}} 
-     onClick={onAdd} type='button'>
+     onClick={toggleAdd} type='button'>
       {text}
     </button>
   );

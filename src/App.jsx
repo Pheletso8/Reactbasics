@@ -46,14 +46,16 @@ const addReminder = (id) => {
       )
   )
 }
+// Adding a task using the add button
+const toggleAdd = () => {
+  setShowAddTask(!showAddTask);
+}
 
   return (
     <div className="mx-8 my-8 p-2 border border-black rounded h-auto">
-      <Header onAdd={() => setShowAddTask(!showAddTask)}
+      <Header toggleAdd={toggleAdd}
       className='flex-none'/>
-     {showAddTask &&
-      <Form onAdd={addTask}
-      />}
+      {showAddTask && <Form onAdd={addTask}/>}
       {tasks.length > 0 ? (<TaskList
       tasks={tasks} onDelete={deleteTask} onToggle={addReminder} />) : 'No Tasks To Show'}
     </div>
